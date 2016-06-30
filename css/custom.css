@@ -1,0 +1,298 @@
+/*** Import Fonts ***/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,100,100italic,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300);
+@font-face {
+  font-family: "Futura Book";
+  src: url("../fonts/Futura-Book.ttf"), url("../fonts/Futura-Book.eot");
+  /* IE */ }
+
+@font-face {
+  font-family: "Didot Italic";
+  src: url("../fonts/Didot-Italic.ttf"), url("../fonts/Didot-Italic.eot");
+  /* IE */ }
+
+/*** Variables ***/
+/* -------------------------------- 
+Small Window Size and Mobile Style
+-------------------------------- */
+@media screen and (max-width: 1050px) {
+  .title-name {
+    font-size: 100px !important; }
+  .cover-des-container {
+    margin-top: -100px !important; }
+  .cover-des {
+    width: 100% !important; }
+  .cover-img span {
+    margin: 200px 0 0 -200px !important; }
+  #p-1 {
+    padding-top: 20vw !important; }
+  .page-wrapper {
+    height: auto !important; } }
+
+@media screen and (max-width: 950px) {
+  .title-author {
+    font-size: 20px !important; } }
+
+@media screen and (max-width: 650px) {
+  .title-name {
+    font-size: 80px !important; }
+  .cover-img span {
+    margin: 250px 0 0 -150px !important; } }
+
+@media screen and (max-width: 450px) {
+  .title-name {
+    font-size: 55px !important; }
+  .cover-des p {
+    margin-top: 20px !important;
+    font-size: 10px !important;
+    line-height: 30px !important; }
+  .cover-des em {
+    font-size: 15px !important; }
+  .cover-img span {
+    margin: 200px 0 0 -100px !important; }
+  #p-1 {
+    position: relative !important;
+    padding-top: 40vw !important; } }
+
+/* -------------------------------- 
+		General Style
+-------------------------------- */
+::selection {
+  background: rgba(255, 254, 199, 0.7); }
+
+::-webkit-scrollbar {
+  display: none; }
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #DFDFDF;
+  overflow-x: hidden;
+  transition: 2s ease-in-out; }
+
+.highlight {
+  background: #fffec7; }
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Futura Book', sans-serif; }
+  .footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #3c3c3c; }
+
+.page-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+
+/* -------------------------------- 
+		Specific Style
+-------------------------------- */
+.navbar-container {
+  position: fixed;
+  top: 0;
+  width: 0;
+  height: .5vw;
+  max-height: 4px;
+  min-height: 2px;
+  background: #EA212D;
+  background: -webkit-linear-gradient(to left, #EA212D, #F45C43);
+  background: linear-gradient(to left, #EA212D, #F45C43);
+  z-index: 999;
+  transition: .5s ease-out; }
+
+section {
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+  font-family: "Lato", sans-serif; }
+
+.title-name {
+  font-weight: 100;
+  color: #3c3c3c;
+  font-size: 7vw; }
+
+.title-author {
+  display: block;
+  position: absolute;
+  right: 10px;
+  color: black;
+  font-weight: 300;
+  font-size: 2vw;
+  margin-top: 10px; }
+
+.cover-des-container {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 100px;
+  margin: 0 auto;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  z-index: 10; }
+  .cover-des-container .cover-des {
+    font-family: 'Futura Book', sans-serif;
+    width: 40%;
+    color: #3c3c3c;
+    flex-grow: 1; }
+    .cover-des-container .cover-des span#rams-link {
+      background: #f9f9f9;
+      border-radius: 3px;
+      transition: .2s ease-in-out; }
+      .cover-des-container .cover-des span#rams-link a {
+        text-decoration: none;
+        color: black; }
+      .cover-des-container .cover-des span#rams-link:hover {
+        background: white; }
+    .cover-des-container .cover-des span.fade-in-cover {
+      display: inline-block; }
+    .cover-des-container .cover-des p {
+      font-size: 15px;
+      line-height: 50px;
+      display: block;
+      width: 80%;
+      margin: 20px auto 0 auto;
+      max-width: 500px; }
+      .cover-des-container .cover-des p em {
+        font-style: italic;
+        color: black;
+        font-size: 20px;
+        animation-delay: .5s; }
+  .cover-des-container .cover-img {
+    flex-grow: 1;
+    width: 60%; }
+    .cover-des-container .cover-img span {
+      position: absolute;
+      top: 20px;
+      left: 37%;
+      font-family: 'Didot Italic', serif;
+      font-size: 20vw;
+      letter-spacing: 5px; }
+    .cover-des-container .cover-img img {
+      width: 100%;
+      min-width: 300px;
+      height: auto;
+      padding-top: 20px; }
+
+.principle-container {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0; }
+  .principle-container .principle-des {
+    position: absolute;
+    width: 100%;
+    z-index: 100; }
+  .principle-container h4 {
+    display: inline-block;
+    position: relative;
+    font-weight: 100;
+    font-size: 6vw;
+    text-transform: uppercase;
+    float: left;
+    opacity: 0; }
+  .principle-container p.fade-in-principle {
+    font-size: 4vw;
+    font-weight: 300;
+    font-style: italic;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    padding-left: 20px;
+    opacity: 0;
+    animation-duration: 2s; }
+  .principle-container span.principle-index {
+    font-weight: 300;
+    position: absolute;
+    z-index: 100; }
+  .principle-container img {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    padding: 0;
+    margin-top: -2px; }
+
+#p-1 span.principle-index {
+  font-size: 12vw;
+  left: 20%; }
+
+#p-1 .principle-des h4 {
+  opacity: 1; }
+
+#p-2 span.principle-index {
+  font-size: 14vw;
+  left: 30%; }
+
+#p-3 span.principle-index {
+  font-size: 18vw;
+  left: 30%; }
+
+#p-4 span.principle-index {
+  font-size: 17vw;
+  left: 15%; }
+
+#p-5 span.principle-index {
+  font-size: 17vw;
+  left: 25%; }
+
+#p-6 span.principle-index {
+  font-size: 20vw;
+  left: 20%; }
+
+#p-7 span.principle-index {
+  font-size: 17vw;
+  left: 30%; }
+
+#p-8 span.principle-index {
+  font-size: 20vw;
+  left: 35%; }
+
+#p-9 span.principle-index {
+  font-size: 17vw;
+  left: 20%; }
+
+#p-10 span.principle-index {
+  font-size: 13vw;
+  left: 15%; }
+
+/*** Custom Animations ***/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@keyframes fadeInUp-Cover {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+.fadeInUp-Cover {
+  -webkit-animation-name: fadeInUp-Cover;
+  animation-name: fadeInUp-Cover; }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp; }
