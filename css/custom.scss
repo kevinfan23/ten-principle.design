@@ -128,20 +128,6 @@ body {
 	background: rgb(255, 254, 199);
 }
 
-.footer {
-	position: absolute;
-	bottom: 10px;
-	width: 100%;
-	text-align: center;
-	font-family: 'Futura Book', sans-serif;
-	
-	a {
-		font-size: 13px;
-		text-decoration: none;
-		color: $dark-gray;
-	}
-}
-
 .page-wrapper {
 	width: 100%;
 	height: 100vh;
@@ -386,6 +372,48 @@ section {
 	span.principle-index {
 		font-size: 13vw;
 		left: 15%;
+	}
+}
+
+/* -------------------------------- 
+			Footer
+-------------------------------- */
+.footer {
+	
+	text-decoration: none;
+	
+	div {
+		margin-top: -2px;
+		padding: 0;
+		height: 100px;
+		width: 100%;
+		background: rgba(185, 189, 192, 0.5);
+		text-align: center;
+		text-transform: uppercase;
+		-webkit-transition: all 0.2s linear;
+		-moz-transition: all 0.2s linear;
+		transition: all 0.2s linear;
+	}
+	
+	p {
+		-webkit-transition: all 0.2s linear;
+		-moz-transition: all 0.2s linear;
+		transition: all 0.2s linear;
+		font-family: $Source-sans;
+		vertical-align: middle;
+		line-height: 100px; 
+		letter-spacing: 2px;
+		font-weight: 600;
+		font-size: 18px;
+		color: #3c3c3c;
+	}
+}
+
+.footer:hover .footer-container {
+	background: rgba(185, 189, 192, 1);
+	
+	p {
+		color: #fff;
 	}
 }
 
